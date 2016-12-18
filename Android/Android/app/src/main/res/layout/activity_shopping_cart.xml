@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shopping_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aigdy.fairybakery.ShoppingCartActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#cd4659"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Fairy Bakery ❤"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/btnCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="16dp"
+                android:visibility="invisible"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_cart" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/BTNtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="ORDER"
+        android:padding="10dp"
+        android:textAlignment="center"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RCVData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TVMenu"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:clipToPadding="false"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/LNLSecound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LNLFirst"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/BTNOrderCart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:text="ORDER TOTAL"
+            android:paddingBottom="10dp"
+            android:layout_weight="50" />
+
+        <TextView
+            android:id="@+id/BTNPriceCart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:text="160 บาท"
+            android:layout_weight="50"
+            android:textColor="#f46170"
+            android:paddingLeft="120dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b6b6b6"/>
+
+    <LinearLayout
+        android:id="@+id/LNLThird"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LNLSecound"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/BTNTitleCalCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="CALORIES TOTAL"
+            android:layout_weight="50"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:id="@+id/BTNCalCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="1040 Cal"
+            android:layout_weight="50"
+            android:textColor="#fff"
+            android:background="#1f9c9d"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:text="CONFIRM"
+        android:background="@drawable/buttonradius"
+        android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

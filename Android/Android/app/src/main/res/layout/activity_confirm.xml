@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.aigdy.fairybakery.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#cd4659"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Fairy Bakery ❤"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/btnCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="16dp"
+                android:src="@drawable/ic_cart" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo_confirm"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tvThanks"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="ทางร้านได้รับ Order ของคุณแล้ว กรุณาเดินทางมารับที่ร้านภายใน 45 นาที"
+            android:layout_below="@+id/logo_confirm"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tvThnaks2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="ขอบคุณค่ะ"
+            android:layout_below="@+id/tvThanks"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:textColor="#cd4659"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Button
+            android:id="@+id/btnME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:text="ME"
+            android:background="@drawable/buttonradius"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

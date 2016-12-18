@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="40dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="40dp"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    tools:context="com.example.aigdy.fairybakery.loginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="342px"
+        android:layout_height="312px"
+        android:background="@mipmap/logo"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/EdtUsername"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:text="test"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:background="@drawable/inputbox"
+        />
+
+    <EditText
+        android:id="@+id/EdtPassword"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:text="444444"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:background="@drawable/inputbox"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="SIGN IN"
+        android:textColor="#fff"
+        android:background="@drawable/buttonradius"
+        android:onClick="onClickSignIn"/>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="#F36373"
+        android:text="Don’t have an account?"
+        android:onClick="onClickRegister"/>
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.aigdy.fairybakery.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#cd4659"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Fairy Bakery ❤"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/btnCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_cart" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.example.aigdy.fairybakery.MainActivity">
+
+        <TextView
+            android:id="@+id/TVMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgSlide"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/detailBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_below="@+id/imgBar"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/menuNameCake1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="25"-->
+        <!--android:text="สโนไวท์เค้ก"-->
+        <!--android:textAlignment="textStart"-->
+        <!--android:layout_marginTop="10dp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/menuCalCake1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="25"-->
+        <!--android:textColor="#2A9C9D"-->
+        <!--android:textAlignment="textEnd"-->
+        <!--android:text="300 cal"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:layout_marginTop="10dp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/menuNameCake2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="25"-->
+        <!--android:text="ซินเดอร์เรล่า.."-->
+        <!--android:textAlignment="textStart"-->
+        <!--android:layout_marginTop="10dp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/menuCalCake2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="25"-->
+        <!--android:text="330 cal"-->
+        <!--android:textColor="#2A9C9D"-->
+        <!--android:textAlignment="textEnd"-->
+        <!--android:layout_marginTop="10dp"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/LNLPriceBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_below="@+id/detailBar"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/menuPriceCake1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="50"-->
+        <!--android:textAlignment="textStart"-->
+        <!--android:text="80 บาท"-->
+        <!--android:textColor="#F36373"-->
+        <!--android:paddingRight="10dp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/menuPriceCake2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="50"-->
+        <!--android:textColor="#F36373"-->
+        <!--android:text="95 บาท"-->
+        <!--android:textAlignment="textStart"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/LNLBtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/LNLPriceBar"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+        <!--android:id="@+id/BtnShowDetail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="50"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:text="ดูรายละเอียด"-->
+        <!--android:background="@drawable/buttonradiusblack"-->
+        <!--android:textColor="#fff"-->
+        <!--android:onClick="onClickDetailMenu"/>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/BtnShowDetail2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="50"-->
+        <!--android:text="ดูรายละเอียด"-->
+        <!--android:background="@drawable/buttonradiusblack"-->
+        <!--android:textColor="#fff"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/imgBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_below="@+id/TVMenu"-->
+        <!--android:layout_alignParentStart="true">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/PicMenu"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="240px"-->
+        <!--android:background="@drawable/picmenu1"-->
+        <!--android:layout_weight="50"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="10dp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/PicMenu2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="240px"-->
+        <!--android:background="@mipmap/cinderlaracake"-->
+        <!--android:layout_weight="50"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+        <!--</LinearLayout>-->
+
+        <ImageView
+            android:id="@+id/imgSlide"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnChoice"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/banner"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/btnChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CalDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="Cal Down"
+                android:textColor="#F36373" />
+
+            <Button
+                android:id="@+id/CalUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="Cal Up"
+                android:textColor="#3b3b3b" />
+
+            <Button
+                android:id="@+id/MyOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="My Order"
+                android:onClick="onClickMyOrder"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RCVData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVMenu"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
